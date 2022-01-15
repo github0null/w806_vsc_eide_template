@@ -30,5 +30,13 @@
             "zixuanwang.linkerscript",
             "redhat.vscode-yaml"
         ]
+    },
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": []
     }
 }
