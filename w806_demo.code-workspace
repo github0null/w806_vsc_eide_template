@@ -7,11 +7,8 @@
     "settings": {
         "files.associations": {
             ".eideignore": "ignore",
-            "stdio.h": "c",
-            "wm_hal.h": "c",
-            "csi_core.h": "c",
-            "wm_gpio.h": "c",
-            "wm_gpio_ex.h": "c"
+            "*.h": "c",
+            "*.c": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {
@@ -19,7 +16,8 @@
             "editor.tabSize": 4,
             "editor.autoIndent": "advanced"
         },
-        "EIDE.Toolchain.AnyGcc.ToolPrefix": "csky-elfabiv2-"
+        "EIDE.Toolchain.AnyGcc.ToolPrefix": "csky-elfabiv2-",
+        "EIDE.SourceTree.AutoSearchIncludePath": true
     },
     "extensions": {
         "recommendations": [

@@ -1,1 +1,71 @@
-{"name":"w806_demo","type":"ANY-GCC","mode":"Debug","toolchain":"ANY_GCC","dependenceList":[{"groupName":"custom","depList":[{"name":"default","incList":[],"libList":[],"sourceDirList":[],"defineList":["TLS_CONFIG_CPU_XT804","WM_SWD_ENABLE=1"]}]}],"compileConfig":{"linkerScriptPath":"ld\\W806\\gcc_csky.ld","options":"null"},"uploader":"Custom","srcDirs":[".\\app",".\\include",".\\ld",".\\lib",".\\platform"],"virtualFolder":{"name":"<virtual_root>","files":[],"folders":[]},"excludeList":[],"outDir":".\\build","deviceName":null,"packDir":null,"uploadConfig":{"bin":"./bin/${ProjectName}.fls","commandLine":"bash ./flash_img.sh ${ProgramFile}"},"uploadConfigMap":{"JLink":{"bin":"","baseAddr":"0x08000000","cpuInfo":{"vendor":"ST","cpuName":"STM32F103C8"},"proType":1,"speed":8000,"otherCmds":""}},"miscInfo":{},"targets":{},"version":"2.16"}
+{
+  "name": "w806_demo",
+  "type": "ANY-GCC",
+  "mode": "Debug",
+  "toolchain": "ANY_GCC",
+  "dependenceList": [
+    {
+      "groupName": "custom",
+      "depList": [
+        {
+          "name": "default",
+          "incList": [],
+          "libList": [],
+          "sourceDirList": [],
+          "defineList": [
+            "TLS_CONFIG_CPU_XT804",
+            "WM_SWD_ENABLE=1"
+          ]
+        }
+      ]
+    }
+  ],
+  "compileConfig": {
+    "linkerScriptPath": "ld\\W806\\gcc_csky.ld",
+    "options": "null"
+  },
+  "uploader": "OpenOCD",
+  "srcDirs": [
+    "./app",
+    "./include",
+    "./ld",
+    "./lib",
+    "./platform"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "excludeList": [],
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "uploadConfig": {
+    "bin": "",
+    "target": "stm32f1x",
+    "interface": "stlink",
+    "baseAddr": "0x08000000"
+  },
+  "uploadConfigMap": {
+    "JLink": {
+      "bin": "",
+      "baseAddr": "0x08000000",
+      "cpuInfo": {
+        "vendor": "ST",
+        "cpuName": "STM32F103C8"
+      },
+      "proType": 1,
+      "speed": 8000,
+      "otherCmds": ""
+    },
+    "Custom": {
+      "bin": "./bin/${ProjectName}.fls",
+      "commandLine": "bash ./flash_img.sh ${ProgramFile}"
+    }
+  },
+  "miscInfo": {
+  },
+  "targets": {},
+  "version": "3.2"
+}
