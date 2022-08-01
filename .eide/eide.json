@@ -24,7 +24,7 @@
     "linkerScriptPath": "ld\\W806\\gcc_csky.ld",
     "options": "null"
   },
-  "uploader": "OpenOCD",
+  "uploader": "Custom",
   "srcDirs": [
     "./app",
     "./include",
@@ -42,10 +42,8 @@
   "deviceName": null,
   "packDir": null,
   "uploadConfig": {
-    "bin": "",
-    "target": "stm32f1x",
-    "interface": "stlink",
-    "baseAddr": "0x08000000"
+    "bin": "./bin/${ProjectName}.fls",
+    "commandLine": "bash ./flash_img.sh ${ProgramFile}"
   },
   "uploadConfigMap": {
     "JLink": {
@@ -62,6 +60,12 @@
     "Custom": {
       "bin": "./bin/${ProjectName}.fls",
       "commandLine": "bash ./flash_img.sh ${ProgramFile}"
+    },
+    "OpenOCD": {
+      "bin": "",
+      "target": "stm32f1x",
+      "interface": "stlink",
+      "baseAddr": "0x08000000"
     }
   },
   "miscInfo": {
